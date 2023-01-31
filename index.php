@@ -57,13 +57,22 @@
 
                             // Calculate Speed of Runner
                             $speed = number_format($distance / $duration,2);
+
+                            // Formatting time to remove Decimal Part
+                            // Start Time
+                            $st_time_part = explode(".", $start_time);
+                            $formatted_st_time = $st_time_part[0];
+
+                            // End Time
+                            $end_time_part = explode(".", $end_time);
+                            $formatted_end_time = $end_time_part[0];
                     ?>
                     <tr>
                         <td><?php echo $name; ?></td>
                         <td><?php echo $speed; ?></td>
                         <td><?php echo $radius; ?></td>
-                        <td><?php echo $start_time; ?></td>
-                        <td><?php echo $end_time; ?></td>
+                        <td><?php echo $formatted_st_time; ?></td>
+                        <td><?php echo $formatted_end_time; ?></td>
                         <td><?php echo $duration; ?></td>
                         <td><?php echo $laps_count; ?></td>
                     </tr>
