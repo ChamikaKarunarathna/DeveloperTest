@@ -30,7 +30,7 @@
         } else {
             echo "<script>
                     window.location.href = '../input-form.php';
-                    alert('End date cannot be before start date !!');
+                    alert('End time cannot be before start time !!');
                 </script>";
         }
 
