@@ -22,7 +22,7 @@
                     </div>
                     <div class="mb-3">
                         <label for="radius" class="form-label">Radius (m)</label>
-                        <input type="number" class="form-control" id="radius" name="radius" required>
+                        <input type="number" class="form-control" id="radius" name="radius" max="100" required>
                         <div id="radius" class="form-text">Maximum Radius of the Playground is 100m</div>
                     </div>
                     <div class="mb-3">
