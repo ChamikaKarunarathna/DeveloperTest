@@ -53,8 +53,8 @@
                             $distance = ($laps_count*(2*(22/7)*$radius))/1000;
                             
                             // Calculate Duration in hours
-                            $duration = number_format(((strtotime($end_time) - strtotime($start_time))/60)/60,2);
-
+                            $duration = ((strtotime($end_time) - strtotime($start_time))/60)/60;
+                            var_dump($duration);
                             // Calculate Speed of Runner
                             $speed = number_format($distance / $duration,2);
 
